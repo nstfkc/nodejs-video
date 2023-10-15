@@ -7,7 +7,7 @@ const app = express();
 const port = 3000;
 
 // Set the path to the directory where your video file is located
-const getVideoPath = (p: string) => path.join(__dirname, "assets", p);
+const getVideoPath = (p: string) => path.join(__dirname, "..", "assets", p);
 
 // Function to get video file stats (size and range)
 const getVideoFileStats = (request: IncomingMessage, path: string) => {
